@@ -74,7 +74,7 @@ def data_update(request):
     ultramegavalor = int (ultravalor)
     # Ajusto para leer la temperatura (Seccion 3.3 de Raspberry Pi Pico Python SDK)
     # Retorno el diccionario
-    return { "cpu_temp" : ultramegavalor }
+    return { "fabriluminico" : ultramegavalor }
     
 
 
@@ -92,3 +92,4 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         # Termina el programa con Ctrl + C
         print("Aplicacion terminada")
+

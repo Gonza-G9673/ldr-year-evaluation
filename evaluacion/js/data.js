@@ -5,13 +5,14 @@ setInterval(() => {
     .then(response => response.json())
     .then(data => {
         // Guardo el valor de temperatura
-        const temp = data.cpu_temp;
-        // Maximo valor de temperatura
-        const max_temp = 100;
-        // Lo escalo a un valor entre -30 y 240 grados
-        const deg = temp * 270 / max_temp - 30;
+        const luz = data.fabriluminico;
+        // Maximo valor de luz
+        const max_luz = 100;
+        // Lo escalo a un valor entre 0 y 100 % luz
+        const deg = luz * 270 / max_luz - 30;
         // Lo cambio en la aguja
         document.querySelector(".gauge .pointer .hand").style.transform = `rotate(${deg}deg)`;
     })
     
 }, 200);
+
