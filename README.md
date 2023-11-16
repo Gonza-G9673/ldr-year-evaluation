@@ -1,4 +1,4 @@
-# microdot evaluatuon 7° grade 
+# E.E.S.T TRQ N° 7 final course work
 This is an evaluation made by carlasaraf. An example of an implementation made by ME of one LDR showing its luminic percentage on a web, running micropython with an Esp32
 
 ## Files Structure
